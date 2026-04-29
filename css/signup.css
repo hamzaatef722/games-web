@@ -1,0 +1,42 @@
+/* css/signup.css */
+/* Styles specific to the Sign Up page */
+
+/* ====== Wider Card for extra fields ====== */
+.signup-card {
+    max-width: 580px;
+}
+
+/* ====== Cyan glow bar variant ====== */
+.signup-glow-bar {
+    background: linear-gradient(90deg, var(--secondary-cyan), var(--primary-purple));
+    box-shadow: 0 0 20px rgba(0, 225, 255, 0.8), 0 0 40px rgba(0, 225, 255, 0.4);
+}
+
+/* ====== First / Last name side-by-side ====== */
+.signup-name-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 480px) {
+    .signup-name-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ====== Subtle entrance animation ====== */
+.signup-card {
+    animation: cardFadeUp 0.5s ease both;
+}
+
+@keyframes cardFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

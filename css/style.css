@@ -1,0 +1,281 @@
+:root {
+    --primary-purple: #c424e8;
+    --secondary-cyan: #2bf0eb;
+    --bg-darker: #0d0f12;
+    --bg-card: #15181e;
+}
+
+
+body {
+    background-color: var(--bg-darker);
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.text-purple {
+    color: var(--primary-purple);
+}
+
+
+a {
+    color: white;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-purple);
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+.nav-category {
+    margin: 0.5rem;
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.active-category {
+    color: #09c;
+}
+
+header img {
+    max-height: 100vh;
+    /* object-fit: cover; */
+}
+
+nav {
+    margin-inline: auto;
+}
+
+nav .container {
+    /* background-color: rgb(58, 73, 123) !important; */
+    /* border-radius: 20px; */
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    width: 100%;
+}
+
+.card {
+    background-color: #272b30;
+    /* filter: grayscale(70%); */
+    transition: 0.3s ease-in-out;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.card-body {
+    font-weight: lighter;
+}
+
+.card-text {
+    font-size: .75rem;
+    color: rgb(147, 149, 152);
+}
+
+.card-footer {
+    font-size: .6rem;
+}
+
+/* .card:hover {
+    filter: grayscale(0%);
+    transform: scale(1.04);
+} */
+
+.details-info {
+    padding: .2rem .4rem;
+    border-radius: 5px;
+    font-size: .75rem;
+}
+
+#loader {
+    z-index: 1600;
+    background-color: var(--bg-darker);
+    display: flex;
+}
+/* From Uiverse.io by alexruix */ 
+.loader {
+  width: 80px;
+  height: 50px;
+  position: relative;
+}
+
+.loader-text {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  color: #C8B6FF;
+  animation: text_713 3.5s ease both infinite;
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+
+.load {
+  background-color: #9A79FF;
+  border-radius: 50px;
+  display: block;
+  height: 16px;
+  width: 16px;
+  bottom: 0;
+  position: absolute;
+  transform: translateX(64px);
+  animation: loading_713 3.5s ease both infinite;
+}
+
+.load::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #D1C2FF;
+  border-radius: inherit;
+  animation: loading2_713 3.5s ease both infinite;
+}
+
+@keyframes text_713 {
+  0% {
+    letter-spacing: 1px;
+    transform: translateX(0px);
+  }
+
+  40% {
+    letter-spacing: 2px;
+    transform: translateX(26px);
+  }
+
+  80% {
+    letter-spacing: 1px;
+    transform: translateX(32px);
+  }
+
+  90% {
+    letter-spacing: 2px;
+    transform: translateX(0px);
+  }
+
+  100% {
+    letter-spacing: 1px;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loading_713 {
+  0% {
+    width: 16px;
+    transform: translateX(0px);
+  }
+
+  40% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  80% {
+    width: 16px;
+    transform: translateX(64px);
+  }
+
+  90% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  100% {
+    width: 16px;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loading2_713 {
+  0% {
+    transform: translateX(0px);
+    width: 16px;
+  }
+
+  40% {
+    transform: translateX(0%);
+    width: 80%;
+  }
+
+  80% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  90% {
+    width: 80%;
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    width: 16px;
+  }
+}
+ 
+ 
+
+
+
+/* --- Cyberpunk Theme Styles --- */
+
+
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--primary-purple) 0%, var(--secondary-cyan) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #d338db 0%, #4bcbdc 100%);
+    color: white !important;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(196, 36, 232, 0.4);
+}
+
+.navbar-brand {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-cyan) !important;
+}
+
+/* Footer Styles */
+.footer-logo-text {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.footer-social i {
+    font-size: 1.2rem;
+    color: #8c8c94;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.footer-social i:hover {
+    color: white;
+}

@@ -1,0 +1,223 @@
+.profile-navbar,
+.profile-footer {
+    background-color: var(--bg-darker);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.profile-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 0;
+}
+
+.profile-active-link {
+    color: var(--primary-purple) !important;
+}
+
+.profile-page {
+    min-height: calc(100vh - 170px);
+    background:
+        radial-gradient(circle at 20% 10%, rgba(196, 36, 232, 0.18), transparent 28rem),
+        radial-gradient(circle at 80% 0%, rgba(43, 240, 235, 0.12), transparent 30rem),
+        var(--bg-darker);
+}
+
+.profile-hero {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.profile-guest-section {
+    min-height: calc(100vh - 165px);
+    padding: 4rem 0;
+}
+
+.profile-guest-card {
+    max-width: 640px;
+    padding: 3rem 2rem;
+    background: rgba(21, 24, 30, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.profile-panel,
+.empty-library,
+.library-card {
+    background: rgba(21, 24, 30, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.profile-panel {
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.profile-avatar,
+.empty-icon {
+    width: 92px;
+    height: 92px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--primary-purple), var(--secondary-cyan));
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    box-shadow: 0 0 28px rgba(196, 36, 232, 0.4);
+}
+
+.profile-eyebrow {
+    color: var(--secondary-cyan);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.profile-title {
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: 900;
+    letter-spacing: 0;
+}
+
+.profile-email,
+.library-platform {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.profile-stats {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.profile-stat-number {
+    display: block;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 900;
+    color: var(--secondary-cyan);
+}
+
+.profile-stat-label {
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+}
+
+.profile-alert {
+    background: rgba(43, 240, 235, 0.1);
+    border: 1px solid rgba(43, 240, 235, 0.35);
+    color: white;
+    border-radius: 8px;
+}
+
+.library-title {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.empty-library {
+    border-radius: 8px;
+}
+
+.empty-icon {
+    width: 76px;
+    height: 76px;
+    font-size: 1.7rem;
+}
+
+.library-card {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.library-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(196, 36, 232, 0.55);
+    box-shadow: 0 16px 34px rgba(196, 36, 232, 0.22);
+}
+
+.library-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+.library-card-body {
+    padding: 1.1rem;
+}
+
+.library-game-title {
+    min-height: 3.2rem;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.library-description {
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 0.78rem;
+    line-height: 1.6;
+    min-height: 3.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.library-loading {
+    background: rgba(21, 24, 30, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.library-remove-btn {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 2.35rem;
+    height: 2.35rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255, 82, 110, 0.65);
+    border-radius: 8px;
+    background: rgba(13, 15, 18, 0.82);
+    color: #ff526e;
+    z-index: 3;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.library-remove-btn:hover {
+    transform: translateY(-2px);
+    background: #ff526e;
+    color: white;
+}
+
+.library-remove-btn:disabled {
+    opacity: 0.6;
+    transform: none;
+}
+
+@media (max-width: 991px) {
+    .profile-stats {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 575px) {
+    .profile-panel {
+        padding: 1.4rem;
+    }
+
+    .profile-avatar {
+        width: 76px;
+        height: 76px;
+        font-size: 2rem;
+    }
+}

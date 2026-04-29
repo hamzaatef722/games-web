@@ -1,0 +1,44 @@
+/* css/contact.css */
+
+.contact-form-container {
+    background-color: #1c1f23;
+}
+
+.contact-input {
+    background-color: #272b30 !important;
+    border: 1px solid #3a3f44 !important;
+}
+
+.contact-input:focus {
+    border-color: #09c !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 153, 204, 0.25) !important;
+}
+
+/* Send Message Button */
+.ctm-btn {
+    position: relative;
+    overflow: hidden;
+    border: none !important;
+    background: rgba(0, 153, 204, 0.15) !important;
+    transition: color 0.35s ease, box-shadow 0.35s ease !important;
+    z-index: 0;
+}
+
+.ctm-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--primary-purple) 0%, var(--secondary-cyan) 100%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    z-index: -1;
+}
+
+.ctm-btn:hover {
+    color: white !important;
+    box-shadow: 0 0 20px rgba(196, 36, 232, 0.4) !important;
+}
+
+.ctm-btn:hover::before {
+    opacity: 1;
+}

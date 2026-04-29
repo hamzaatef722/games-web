@@ -1,0 +1,222 @@
+/* ============================================================
+   ABOUT PAGE – SPECIFIC STYLES
+   ============================================================ */
+
+/* ---------- Shared typography helpers ---------- */
+.about-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--secondary-cyan);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.about-section-title {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.15;
+}
+
+.about-body-text {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.85;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.about-hero {
+    position: relative;
+    min-height: 70vh;
+    background: radial-gradient(ellipse 70% 60% at 50% 60%, rgba(160, 30, 200, 0.35) 0%, transparent 70%),
+        var(--bg-darker);
+    overflow: hidden;
+}
+
+.about-hero-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 50% 50% at 50% 80%, rgba(100, 0, 180, 0.25) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.about-hero-title {
+    font-size: clamp(2.4rem, 7vw, 5rem);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+}
+
+.about-hero-sub {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.85;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+/* ============================================================
+   STORY SECTION
+   ============================================================ */
+.about-story-section {
+    background-color: var(--bg-darker);
+}
+
+/* ---------- Stat cards ---------- */
+.about-stat-card {
+    background-color: #1a1d24;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-stat-card:hover {
+    border-color: rgba(196, 36, 232, 0.4);
+    transform: translateY(-4px);
+}
+
+.about-stat-num {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 900;
+    background: linear-gradient(90deg, var(--primary-purple) 0%, var(--secondary-cyan) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+}
+
+.about-stat-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* ============================================================
+   VALUES SECTION
+   ============================================================ */
+.about-values-section {
+    background-color: var(--bg-darker);
+}
+
+.about-value-card {
+    background-color: #15181e;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    padding: 2rem 1.5rem;
+    text-align: left;
+    height: 100%;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-value-card:hover {
+    border-color: rgba(196, 36, 232, 0.35);
+    background: linear-gradient(145deg, rgba(120, 20, 170, 0.4) 0%, rgba(60, 10, 100, 0.6) 100%);
+    transform: translateY(-4px);
+}
+
+/* Active / highlighted card */
+.about-value-card--active {
+
+    border-color: rgba(196, 36, 232, 0.5);
+}
+
+.about-value-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background-color: rgba(196, 36, 232, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    color: var(--primary-purple);
+    transition: background-color 0.3s ease;
+}
+
+.about-value-card:hover .about-value-icon,
+.about-value-card--active .about-value-icon {
+    background-color: rgba(196, 36, 232, 0.25);
+}
+
+.about-value-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.6rem;
+}
+
+.about-value-text {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* ============================================================
+   TEAM SECTION
+   ============================================================ */
+.about-team-section {
+    background-color: var(--bg-darker);
+}
+
+.about-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Circular avatar with gradient ring and glow */
+.about-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6b1fa8 0%, #c424e8 60%, #9b3ec8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 2px;
+    position: relative;
+    /* glowing ring */
+    box-shadow: 0 0 0 3px rgba(196, 36, 232, 0.5),
+        0 0 30px rgba(196, 36, 232, 0.35),
+        0 0 60px rgba(196, 36, 232, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-avatar:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 0 3px rgba(43, 240, 235, 0.6),
+        0 0 35px rgba(43, 240, 235, 0.4),
+        0 0 70px rgba(43, 240, 235, 0.15);
+}
+
+.about-member-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.about-member-role {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--secondary-cyan);
+    text-transform: uppercase;
+}
