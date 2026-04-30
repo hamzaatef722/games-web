@@ -21,12 +21,11 @@ session_start();
 <body>
 
     <!-- navBar -->
-    <nav class="navbar navbar-expand-lg p-4 z-3 position-relative"
-        style="background-color: var(--bg-darker); border-bottom: 1px solid rgba(255,255,255,0.05);">
+    <nav class="navbar navbar-expand-lg p-4 z-3 position-relative games-navbar">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand text-white d-flex align-items-center gap-2" href="index.php">
-                <i class="fa-solid fa-gamepad fs-3" style="color: var(--primary-purple);"></i>
+                <i class="fa-solid fa-gamepad fs-3 games-brand-icon"></i>
                 <span class="text-gradient m-0 fs-4">GAMES REVIEW</span>
             </a>
 
@@ -43,8 +42,7 @@ session_start();
                         <a class="nav-link text-white" href="./index.php">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="games.php"
-                            style="color: var(--primary-purple) !important;">GAMES</a>
+                        <a class="nav-link games-active-link" href="games.php">GAMES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="about.php">ABOUT</a>
@@ -76,12 +74,11 @@ session_start();
     <!-- games section -->
     <main>
         <!-- Explore Hero -->
-        <section class="py-5 text-center" style="background-color: var(--bg-darker);">
+        <section class="py-5 text-center games-hero-section">
             <div class="container py-5">
                 <span
-                    class="badge rounded-pill border border-secondary text-white-50 px-3 py-2 mb-4 d-inline-flex align-items-center gap-2"
-                    style="background-color: transparent;"><i class="fa-solid fa-gamepad"></i> DISCOVER</span>
-                <h1 class="display-3 fw-black mb-3 text-white" style="font-weight: 900; letter-spacing: 2px;"><span
+                    class="badge rounded-pill border border-secondary text-white-50 px-3 py-2 mb-4 d-inline-flex align-items-center gap-2 games-discover-badge"><i class="fa-solid fa-gamepad"></i> DISCOVER</span>
+                <h1 class="display-3 fw-black mb-3 text-white games-hero-title"><span
                         class="text-gradient">EXPLORE</span> GAMES</h1>
                 <p class="text-white-50 mb-5 fs-5">Pick a genre and discover top-rated games from across the universe.
                 </p>
@@ -97,11 +94,11 @@ session_start();
             </div>
         </section>
 
-        <section id="games" class="py-5" style="background-color: var(--bg-darker);">
+        <section id="games" class="py-5 games-list-section">
             <div class="container">
                 <div id="games-display" class="row gy-4">
                     <!-- <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card games-demo-card">
                             <img src="./img/thumbnail.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
@@ -118,7 +115,7 @@ session_start();
 
                     </div> -->
                     <!-- <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card games-demo-card">
                             <img src="./img/thumbnail.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
@@ -135,7 +132,7 @@ session_start();
 
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-                        <div class="card d-flex flex-column" style="width: 18rem;">
+                        <div class="card d-flex flex-column games-demo-card">
                             <img src="./img/thumbnail.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
@@ -152,7 +149,7 @@ session_start();
 
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card games-demo-card">
                             <img src="./img/thumbnail.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
@@ -216,11 +213,10 @@ session_start();
         </div>
     </section>
     <!-- Footer -->
-    <footer class="py-4 mt-auto"
-        style="background-color: var(--bg-darker); border-top: 1px solid rgba(255,255,255,0.05);">
+    <footer class="py-4 mt-auto games-footer">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             <a class="navbar-brand text-white d-flex align-items-center gap-2 mb-3 mb-md-0" href="index.php">
-                <i class="fa-solid fa-gamepad fs-4" style="color: var(--primary-purple);"></i>
+                <i class="fa-solid fa-gamepad fs-4 games-brand-icon"></i>
                 <span class="text-gradient footer-logo-text m-0 fs-5">GAMES REVIEW</span>
             </a>
 

@@ -1,5 +1,21 @@
 /* css/contact.css */
 
+.contact-navbar,
+.contact-footer {
+    background-color: var(--bg-darker);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 0;
+}
+
+.contact-brand-icon,
+.contact-active-link {
+    color: var(--primary-purple) !important;
+}
+
 .contact-form-container {
     background-color: #1c1f23;
 }

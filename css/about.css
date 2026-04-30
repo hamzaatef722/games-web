@@ -3,6 +3,23 @@
    ============================================================ */
 
 /* ---------- Shared typography helpers ---------- */
+.about-navbar,
+.about-footer {
+    background-color: var(--bg-darker);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.about-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 0;
+}
+
+.about-brand-icon,
+.about-active-link,
+.about-highlight {
+    color: var(--primary-purple) !important;
+}
+
 .about-eyebrow {
     font-size: 0.7rem;
     font-weight: 700;

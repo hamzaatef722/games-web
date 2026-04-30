@@ -139,15 +139,15 @@ export class Ui {
         short_description: this.escapeHtml(element.short_description),
       };
       gameBox += `<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <div role="button" game-id="${game.id}" class="card game-card border-0 w-100" style="background-color: var(--bg-card); border-radius: 12px; overflow: hidden;">
+                        <div role="button" game-id="${game.id}" class="card game-card border-0 w-100">
                             <img src="${game.thumbnail}" class="card-img-top" alt="${game.title}">
                             <div class="card-body py-3">
-                                <p class="text-info fw-bold small text-uppercase mb-1" style="letter-spacing: 1px;">${game.genre}</p>
+                                <p class="text-info fw-bold small text-uppercase mb-1 game-genre-label">${game.genre}</p>
                                 <h5 class="fw-bold text-white mb-0 text-truncate">${game.title}</h5>
                             </div>
                             <!-- Overlay slides up on hover -->
                             <div class="game-overlay">
-                                <p class="text-info fw-bold small text-uppercase mb-1" style="letter-spacing: 1px;">${game.genre}</p>
+                                <p class="text-info fw-bold small text-uppercase mb-1 game-genre-label">${game.genre}</p>
                                 <h6 class="fw-bold text-white mb-2">${game.title}</h6>
                                 <p class="game-description mb-0">${game.short_description}</p>
                             </div>

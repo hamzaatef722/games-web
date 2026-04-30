@@ -23,12 +23,11 @@ session_start();
 <body>
 
     <!-- navBar -->
-    <nav class="navbar navbar-expand-lg p-4 z-3 position-relative"
-        style="background-color: var(--bg-darker); border-bottom: 1px solid rgba(255,255,255,0.05);">
+    <nav class="navbar navbar-expand-lg p-4 z-3 position-relative about-navbar">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand text-white d-flex align-items-center gap-2" href="index.php">
-                <i class="fa-solid fa-gamepad fs-3" style="color: var(--primary-purple);"></i>
+                <i class="fa-solid fa-gamepad fs-3 about-brand-icon"></i>
                 <span class="text-gradient m-0 fs-4">GAMES REVIEW</span>
             </a>
 
@@ -48,7 +47,7 @@ session_start();
                         <a class="nav-link text-white" href="games.php">GAMES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php" style="color: var(--primary-purple) !important;">ABOUT</a>
+                        <a class="nav-link about-active-link" href="about.php">ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="contact.php">CONTACT</a>
@@ -105,7 +104,7 @@ session_start();
                     <div class="col-lg-5 mb-5 mb-lg-0">
                         <p class="about-eyebrow">OUR STORY</p>
                         <h2 class="about-section-title mb-4">
-                            Built by players, <span style="color: var(--primary-purple);">for players</span>
+                            Built by players, <span class="about-highlight">for players</span>
                         </h2>
                         <p class="about-body-text mb-4">
                             Games Review started in 2019 as a small Discord server where four friends shared honest
@@ -260,11 +259,10 @@ session_start();
     </main>
 
     <!-- Footer -->
-    <footer class="py-4 mt-auto"
-        style="background-color: var(--bg-darker); border-top: 1px solid rgba(255,255,255,0.05);">
+    <footer class="py-4 mt-auto about-footer">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             <a class="navbar-brand text-white d-flex align-items-center gap-2 mb-3 mb-md-0" href="index.php">
-                <i class="fa-solid fa-gamepad fs-4" style="color: var(--primary-purple);"></i>
+                <i class="fa-solid fa-gamepad fs-4 about-brand-icon"></i>
                 <span class="text-gradient footer-logo-text m-0 fs-5">GAMES REVIEW</span>
             </a>
 
