@@ -96,7 +96,7 @@ $users = $usersStmt->fetchAll(PDO::FETCH_ASSOC);
                     <li class="nav-item"><a class="nav-link text-white" href="games.php">GAMES</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="about.php">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="contact.php">CONTACT</a></li> -->
-                    <li class="nav-item"><a class="nav-link profile-active-link" href="admin.php">ADMIN</a></li>
+                    <li class="nav-item"><a class="nav-link active nav-active-link" href="admin.php" aria-current="page" style="color: var(--primary-purple) !important;">ADMIN</a></li>
                 </ul>
                 <div class="d-flex">
                     <span class="text-white me-3 align-self-center">

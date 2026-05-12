@@ -9,9 +9,6 @@
     border-bottom: 0;
 }
 
-.profile-active-link {
-    color: var(--primary-purple) !important;
-}
 
 .profile-page {
     min-height: calc(100vh - 170px);

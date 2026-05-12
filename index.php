@@ -40,7 +40,7 @@ session_start();
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
                     <li class="nav-item">
-                        <a class="nav-link nav-active-link" href="index.php">HOME</a>
+                        <a class="nav-link active nav-active-link" href="index.php" aria-current="page" style="color: var(--primary-purple) !important;">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="games.php">GAMES</a>

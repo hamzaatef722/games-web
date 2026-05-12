@@ -11,10 +11,10 @@
     border-bottom: 0;
 }
 
-.contact-brand-icon,
-.contact-active-link {
+.contact-brand-icon {
     color: var(--primary-purple) !important;
 }
+
 
 .contact-form-container {
     background-color: #1c1f23;

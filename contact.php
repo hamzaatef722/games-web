@@ -15,7 +15,7 @@ session_start();
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contact.css">
-    <title>Contact</title>
+    <title>Contact | Games Review</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@ session_start();
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand text-white d-flex align-items-center gap-2" href="index.php">
-                <i class="fa-solid fa-gamepad fs-3 contact-brand-icon"></i>
+                <i class="fa-solid fa-gamepad fs-3 text-purple"></i>
                 <span class="text-gradient m-0 fs-4">GAMES REVIEW</span>
             </a>
             
@@ -48,7 +48,7 @@ session_start();
                         <a class="nav-link text-white" href="about.php">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link contact-active-link" href="contact.php">CONTACT</a>
+                        <a class="nav-link active nav-active-link" href="contact.php" aria-current="page" style="color: var(--primary-purple) !important;">CONTACT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="profile.php">PROFILE</a>

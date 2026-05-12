@@ -92,7 +92,7 @@ if ($isLoggedIn) {
                         <a class="nav-link text-white" href="contact.php">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link profile-active-link" href="profile.php">PROFILE</a>
+                        <a class="nav-link active nav-active-link" href="profile.php" aria-current="page" style="color: var(--primary-purple) !important;">PROFILE</a>
                     </li>
                 </ul>
                 <div class="d-flex">

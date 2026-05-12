@@ -19,15 +19,7 @@ body {
 }
 
 
-a {
-    color: white;
-    transition: all .2s ease-in-out;
-    text-decoration: none;
-}
 
-a:hover {
-    color: var(--primary-purple);
-}
 
 .navbar-brand {
     font-weight: 500;
@@ -52,6 +44,11 @@ nav {
     margin-inline: auto;
 }
 
+.navbar {
+    --bs-navbar-active-color: var(--primary-purple);
+    --bs-navbar-hover-color: var(--secondary-cyan);
+}
+
 nav .container {
     /* background-color: rgb(58, 73, 123) !important; */
     /* border-radius: 20px; */
@@ -59,31 +56,7 @@ nav .container {
     width: 100%;
 }
 
-.card {
-    background-color: #272b30;
-    /* filter: grayscale(70%); */
-    transition: 0.3s ease-in-out;
-    height: 100%;
-    transition: all .3s ease-in-out;
-}
 
-.card-body {
-    font-weight: lighter;
-}
-
-.card-text {
-    font-size: .75rem;
-    color: rgb(147, 149, 152);
-}
-
-.card-footer {
-    font-size: .6rem;
-}
-
-/* .card:hover {
-    filter: grayscale(0%);
-    transform: scale(1.04);
-} */
 
 .details-info {
     padding: .2rem .4rem;
@@ -262,6 +235,8 @@ nav .container {
     color: var(--secondary-cyan) !important;
 }
 
+
+
 /* Footer Styles */
 .footer-logo-text {
     font-weight: 900;
@@ -279,3 +254,7 @@ nav .container {
 .footer-social i:hover {
     color: white;
 }
+
+
+
+

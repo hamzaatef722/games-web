@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: index.php");
         }
         exit();
-    } else {
+    } else { 
         $error = "Invalid email or password!";
     }
 }

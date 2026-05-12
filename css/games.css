@@ -1,5 +1,11 @@
 /* css/games.css */
 /* Styles specific to the Games page */
+/* :root {
+    --primary-purple: #c424e8;
+    --secondary-cyan: #2bf0eb;
+    --bg-darker: #0d0f12;
+    --bg-card: #15181e;
+} */
 
 .games-navbar,
 .games-footer,
@@ -7,6 +13,7 @@
 .games-list-section {
     background-color: var(--bg-darker);
 }
+
 
 .games-navbar {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -16,8 +23,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.games-brand-icon,
-.games-active-link {
+.games-brand-icon {
     color: var(--primary-purple) !important;
 }
 
