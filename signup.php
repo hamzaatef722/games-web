@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $hashed = password_hash($password, PASSWORD_DEFAULT);
             $stmt = $conn->prepare("INSERT INTO users (id, first_name, last_name, email, password, role) VALUES (UUID(), ?, ?, ?, ?, 'user')");
             $stmt->execute([$first_name, $last_name, $email, $hashed]);
-            header("Location: login.php");
+            header("Location: signup-success.php");
             exit();
         }
     }

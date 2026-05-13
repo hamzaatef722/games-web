@@ -1,7 +1,7 @@
-$(".nav-category").on("click", function (e) {
-  $(".nav-category").removeClass("active-category");
-  $(e.target).addClass("active-category");
-});
+// $(".nav-category").on("click", function (e) {
+//   $(".nav-category").removeClass("active-category");
+//   $(e.target).addClass("active-category");
+// });
 
 import { Game } from "./games.module.js";
 if (document.querySelector("#games-display")) {

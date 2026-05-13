@@ -1,0 +1,24 @@
+
+.success-icon {
+    color: var(--secondary-cyan);
+    filter: drop-shadow(0 0 18px rgba(43, 240, 235, 0.45));
+}
+
+.status-actions .btn {
+    min-width: 160px;
+    letter-spacing: 1px;
+}
+
+.btn-outline-cyan {
+    color: var(--secondary-cyan) !important;
+    border: 1px solid rgba(43, 240, 235, 0.65);
+    background: rgba(43, 240, 235, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.btn-outline-cyan:hover {
+    color: white !important;
+    border-color: var(--secondary-cyan);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(43, 240, 235, 0.28);
+}
