@@ -3,13 +3,15 @@ session_start();
 require_once 'DB.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $first_name = trim($_POST["first_name"]);
-    $last_name  = trim($_POST["last_name"]);
-    $email      = trim($_POST["email"]);
-    $password   = trim($_POST["password"]);
-    $confirm    = trim($_POST["confirm"]);
+    $first_name = trim($_POST["first_name"] ?? "");
+    $last_name  = trim($_POST["last_name"] ?? "");
+    $email      = trim($_POST["email"] ?? "");
+    $password   = trim($_POST["password"] ?? "");
+    $confirm    = trim($_POST["confirm"] ?? "");
 
-    if ($password !== $confirm) {
+    if ($first_name === "" || $last_name === "" || $email === "" || $password === "" || $confirm === "") {
+        $error = "All fields are required!";
+    } elseif ($password !== $confirm) {
         $error = "Passwords do not match!";
     } else {
         $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
@@ -71,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label class="login-label mb-2" for="signup-firstname">FIRST NAME</label>
                         <div class="login-input-group">
                             <i class="fa-solid fa-user login-input-icon"></i>
-                            <input id="signup-firstname" name="first_name" type="text" class="login-input" placeholder="John">
+                            <input id="signup-firstname" name="first_name" type="text" class="login-input" placeholder="John" required>
                         </div>
                     </div>
 
@@ -80,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label class="login-label mb-2" for="signup-lastname">LAST NAME</label>
                         <div class="login-input-group">
                             <i class="fa-solid fa-user login-input-icon"></i>
-                            <input id="signup-lastname" name="last_name" type="text" class="login-input" placeholder="Doe">
+                            <input id="signup-lastname" name="last_name" type="text" class="login-input" placeholder="Doe" required>
                         </div>
                     </div>
                 </div>
@@ -90,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label class="login-label mb-2" for="signup-email">EMAIL</label>
                     <div class="login-input-group">
                         <i class="fa-regular fa-envelope login-input-icon"></i>
-                        <input id="signup-email" name="email" type="email" class="login-input" placeholder="you@example.com">
+                        <input id="signup-email" name="email" type="email" class="login-input" placeholder="you@example.com" required>
                     </div>
                 </div>
 
@@ -99,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label class="login-label mb-2" for="signup-password">PASSWORD</label>
                     <div class="login-input-group">
                         <i class="fa-solid fa-lock login-input-icon"></i>
-                        <input id="signup-password" name="password" type="password" class="login-input" placeholder="········">
+                        <input id="signup-password" name="password" type="password" class="login-input" placeholder="········" required>
                     </div>
                 </div>
 
@@ -108,7 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label class="login-label mb-2" for="signup-confirm">CONFIRM PASSWORD</label>
                     <div class="login-input-group">
                         <i class="fa-solid fa-shield-halved login-input-icon"></i>
-                        <input id="signup-confirm" name="confirm" type="password" class="login-input" placeholder="········">
+                        <input id="signup-confirm" name="confirm" type="password" class="login-input" placeholder="········" required>
                     </div>
                 </div>
 
