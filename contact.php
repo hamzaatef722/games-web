@@ -7,6 +7,8 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact the Games Review team with questions, feedback, or ideas about the games and reviews you care about.">
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -118,6 +120,10 @@ session_start();
                             <li class="mb-3 d-flex align-items-center">
                                 <span class="text-white-50 me-3 fs-5">•</span>
                                 Get support with your gaming account
+                            </li>
+                             <li class="mb-3 d-flex align-items-center">
+                                <span class="text-white-50 me-3 fs-5">•</span>
+                               <a href="tel:+201234567890">+20 123 456 7890</a> 
                             </li>
                         </ul>
 

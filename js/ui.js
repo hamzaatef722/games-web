@@ -91,7 +91,9 @@ export class Ui {
   }
 
   async syncLibraryButton(gameId) {
-    const button = document.querySelector(`.details-heart-btn[data-game-id="${gameId}"]`);
+    const button = document.querySelector(
+      `.details-heart-btn[data-game-id="${gameId}"]`,
+    );
     const message = document.querySelector("#library-message");
 
     if (!button) {
@@ -99,17 +101,24 @@ export class Ui {
     }
 
     try {
-      const response = await fetch(`library_status.php?game_id=${encodeURIComponent(gameId)}`, {
-        headers: {
-          Accept: "application/json",
-          "X-Requested-With": "XMLHttpRequest",
+      const response = await fetch(
+        `library_status.php?game_id=${encodeURIComponent(gameId)}`,
+        {
+          headers: {
+            Accept: "application/json",
+            "X-Requested-With": "XMLHttpRequest",
+          },
         },
-      });
+      );
       const data = await response.json();
 
       if (data.success && data.added) {
         this.markLibraryButtonAdded(button);
-        this.showLibraryMessage(message, "This game is already in your library.", "success");
+        this.showLibraryMessage(
+          message,
+          "This game is already in your library.",
+          "success",
+        );
       }
     } catch (error) {
       return;
@@ -156,6 +165,7 @@ export class Ui {
     }
     document.querySelector("#games-display").innerHTML = gameBox;
   }
+
   displayDetails(gameDetails) {
     const game = {
       id: this.escapeHtml(gameDetails.id),
@@ -197,6 +207,7 @@ export class Ui {
     document.querySelector("#details-display").innerHTML = detailsContent;
     this.syncLibraryButton(game.id);
   }
+
   showLoader() {
     $("#loader").removeClass("d-none").fadeIn(200);
   }
